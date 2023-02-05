@@ -7,7 +7,8 @@
 body{
     height: 100vh;
     display: flex;
-    background-color: rgb(247, 83, 61);
+    background-color: rgb(147, 196, 238);
+        
 }
 
 .jogo{
@@ -20,14 +21,15 @@ body{
 }
 
 .cartao{
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
+    width: calc(20% - 10px);
+    height: calc(22.222% - 10px);
     margin: 5px;
     position: relative;
     box-shadow: 1 px 1 px 1 px rgba(0, 0, 0, 0,3 );
     transform: escala(1);
     transform-style: preserve-3d;
     transition: transforms 0,5s;
+    
 }
 
 .cartao:active{
@@ -39,16 +41,19 @@ body{
     transform: rotateY(180deg);
 }
 
-.frente-cartao, .verso-cartao {
+.frente-cartao, .verso-cartao{
     width: 100%;
     height: 100%;
     padding: 20px;
     position: absolute;
-    border-radius: 5px;
-    background-color: beige;
+    border-radius: 10px;
     backface-visibility: hidden;
+    background-image: url(https://3dtiles.com/wp-content/uploads/2017/12/Triangles-normal-map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
 }
-
+    
 .frente-cartao{
     transform: rotateY(180deg);
-}
+    }
