@@ -6,7 +6,6 @@
 
 body{
     height: 100vh;
-    display: flex;
     background-color: lightskyblue;
     display: flex;
     align-items: flex-start;
@@ -26,7 +25,7 @@ body{
     flex-direction: column;    
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .jogo{
@@ -52,7 +51,7 @@ body{
 
 .cartao:active{
     transform: scale(0.97);
-    transition: transform .2s;
+    transition: transform .1s;
 }
 
 .cartao.virado{
@@ -84,21 +83,22 @@ body{
 }
 
 td{
-    border: 1px solid rgb(107, 15, 126);
+    border: 3px solid rgb(107, 15, 126);
     text-align: center;
-    width: 200px;
+    width: 120px;
+    background-color: white;
 }
 
-#reiniciar{
+.reiniciar{
     width: 100%;
     border-radius: 5px;
     background-color: #9006b2;
-    color: black;
-    margin-top: 10px;
+    color: white;
+    margin-top: 15px;
     height: 30px;
 }
 
-#reiniciar:hover{
+.reiniciar:hover{
     color: #7613af;
     background-color: aquamarine;
 }
