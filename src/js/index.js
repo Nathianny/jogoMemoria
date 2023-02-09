@@ -19,7 +19,7 @@ var placar = 0;
 var tempo = 0;
 
 var intervalo = setInterval(function () {
-  if (tempo == 90 || placar == 10) {
+  if (tempo == 80 || placar == 10) {
     clearInterval(intervalo);
     if (placar == 10) {
       alert(
